@@ -1,0 +1,56 @@
+@import 'src/variables.module';
+
+$checkboxColor: $textColor;
+$checkboxCornerLength: 24px;
+$successColorOne: #ccc;
+
+.taskWrapper {
+    position: relative;
+    z-index: 1;
+    height: $itemHeight;
+    width: $itemWidth;
+    background-color: $itemColor;
+    margin: $itemMargin;
+    border-radius: $itemBorderRadius;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgba(0, 153, 255, 0.1);
+}
+
+.checkbox {
+    z-index: inherit;
+    margin: 2 * $itemMargin 4 * $itemMargin;
+    height: $checkboxCornerLength;
+    width: $checkboxCornerLength;
+    stroke-width: 2;
+    overflow: unset;
+
+    & .rect {
+        height: $checkboxCornerLength;
+        width: $checkboxCornerLength;
+        // fill: #222;
+        stroke: $checkboxColor;
+    }
+}
+
+.tick {
+    stroke: $successColorOne;
+    // stroke-dasharray: 13;
+    // stroke-dashoffset: 13;
+}
+
+.text {
+    color: $successColorOne;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,46 @@
+@import 'src/variables.module';
+
+.overlay {
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    background-color: $backgroundColor;
+}
+
+.moduleWrapper {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: $itemColor;
+    height: 40vh;
+    width: 80vw;
+    border-radius: $itemBorderRadius;
+}
+
+.field {
+    margin: $itemMargin;
+    background-color: $itemColor;
+    border: 0px;
+    outline: none;
+    caret-color: $defaultTextColor;
+    color: $defaultTextColor;
+    font-family: inherit;
+
+    &::placeholder { 
+        color: $defaultTextColor;
+    }
+}
+
+.inputField {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.textField {
+    font-size: 16px;
+    font-weight: 500;
+    resize: none;
+}

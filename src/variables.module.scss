@@ -1,0 +1,18 @@
+$backgroundColor: #000;
+$textColor: rgb(101 101 101);
+$defaultTextColor: #ccc;
+$successColor: #0e7be8;
+$itemColor: #222;
+
+$itemMargin: 5px;
+$itemBorderRadius: 7px;
+$itemHeight: 60px;
+$itemWidth: 80%;
+
+:export {
+    backgroundColor: $backgroundColor;
+    textColor: $textColor;
+    defaultColor: $itemColor;
+    successColor: $successColor;
+    itemColor: $itemColor;
+}
