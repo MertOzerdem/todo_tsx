@@ -9,10 +9,29 @@ $itemBorderRadius: 7px;
 $itemHeight: 60px;
 $itemWidth: 80%;
 
+$zFront: 100;
+$zOverlay: 99;
+$zBack: 98;
+
 :export {
     backgroundColor: $backgroundColor;
     textColor: $textColor;
     defaultColor: $itemColor;
     successColor: $successColor;
     itemColor: $itemColor;
+}
+
+
+// popup Configurations
+$popUpTop: 20px;
+$popUpWidth: 80%;
+$popUpHeight: 40%;
+$popUpBorderRadius: 6px;
+
+:export {
+    popUpTop: $popUpTop;
+    popUpWidth: $popUpWidth;
+    popUpHeight: $popUpHeight;
+    popUpBorderRadius: $popUpBorderRadius;
+    popUpBackgroundColor: $itemColor;
 }

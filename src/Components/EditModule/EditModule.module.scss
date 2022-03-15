@@ -2,7 +2,7 @@
 
 .overlay {
     position: absolute;
-    z-index: 99;
+    z-index: $zOverlay;
     height: 100%;
     width: 100%;
     background-color: $backgroundColor;
@@ -11,13 +11,13 @@
 .moduleWrapper {
     position: absolute;
     z-index: 100;
-    top: 20px;
+    top: $popUpTop;
     display: flex;
     flex-direction: column;
     background-color: $itemColor;
-    height: 40vh;
-    width: 80vw;
-    border-radius: $itemBorderRadius;
+    height: $popUpHeight;
+    width: $popUpWidth;
+    border-radius: $popUpBorderRadius;
 }
 
 .field {

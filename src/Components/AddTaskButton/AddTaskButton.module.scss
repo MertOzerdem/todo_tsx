@@ -1,13 +1,19 @@
 @import "src/variables.module";
 
+$addButtonHeight: 60px;
+$addButtonWidth: 60px;
+$borderRadius: 50%;
+
 .addTaskButton {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: $successColor;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: $zFront;
+    width: $addButtonHeight;
+    height: $addButtonWidth;
+    border-radius: $borderRadius;
+    background-color: $successColor;
+    transform-origin: 50% 50% 0px;
 }
 
 .plus {
@@ -21,4 +27,10 @@
         stroke-width: 2;
         stroke-linecap: round;
     }
+}
+
+:export {
+    addButtonHeight: $addButtonHeight;
+    addButtonWidth: $addButtonWidth;
+    addButtonBorderRadius: $borderRadius;
 }

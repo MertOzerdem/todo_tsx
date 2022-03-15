@@ -16,6 +16,7 @@ const MainView = () => {
             <AddTaskButton 
                 className={styles.addTaskButton} 
                 setIsEditModuleOpen={setIsEditModuleOpen}
+                isEditModuleOpen={isEditModuleOpen}
             />
         </div>
     );   
